@@ -1,5 +1,7 @@
 .collapse-Nav {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 img {
@@ -13,5 +15,12 @@ img {
 
 .img-Personal {
   width: 300px;
+}
+
+.btn-about {
+  background-color: #afc3d3;
+  border-color: #afc3d3;
+  border-radius: 30px;
+  padding: .35em 1.75em;
 }
 /*# sourceMappingURL=base.css.map */
