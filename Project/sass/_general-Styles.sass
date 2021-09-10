@@ -11,9 +11,8 @@
     h2
         @extend %first-title
         font-size: 4em
-    p
-        font-family: 'Alumni Sans', sans-serif
-        font-size: 1.4em
+    .text-info
+        @extend  %text-info
 
 img
     height: 20px
@@ -22,6 +21,10 @@ img
     h2
         @extend %first-title
         font-size: 2.3em
+
+h3
+    @extend  %first-title
+    font-size: 2em
 .contactUs
     padding-right: 15px !important
     border-right: 1px solid
@@ -46,3 +49,19 @@ img
     margin-bottom: 1.5em
 .col-br
     border-right: 1px solid rgba(58,86,125,.4)
+
+ul
+    list-style-type: none
+    padding-left: 0
+
+li
+    a
+        color: rgba(0, 0, 0, 0.623)
+        font-size: 1em
+
+.h2-footer
+    font-size: 1.6em
+    font-weight: bold
+
+.h3-footer
+    font-size: 1.4em
