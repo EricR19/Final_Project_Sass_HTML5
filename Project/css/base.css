@@ -1,9 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&family=Glory&family=Open+Sans+Condensed:wght@700&family=Poppins:wght@200;300&family=Sarabun:wght@100&display=swap");
+.container-title h2, .text-title h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.nav-style a {
+  font-family: 'Glory', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
 .collapse-Nav {
   justify-content: flex-end;
 }
 
+.container-title h2 {
+  font-size: 4em;
+}
+
+.container-title p {
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 1.4em;
+}
+
 img {
   height: 20px;
+}
+
+.text-title h2 {
+  font-size: 2.3em;
 }
 
 .contactUs {
@@ -37,6 +61,18 @@ img {
   border-radius: 30px;
   padding: 0.35em 1.75em;
   color: #ecf0f1;
+}
+
+.btn-All-Services {
+  background-color: rgba(255, 255, 255, 0.843);
+  border-color: rgba(255, 255, 255, 0.843);
+  border-radius: 30px;
+  padding: 0.35em 1.75em;
+  color: black;
+}
+
+.btn-All-Services:hover {
+  background-color: rgba(204, 185, 185, 0.753);
 }
 
 .img-services {
