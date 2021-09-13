@@ -112,6 +112,20 @@ li a {
   animation: write 1.9s infinite alternate-reverse;
 }
 
+.animate-bottom {
+  animation: fadeInBottom 1s;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes write {
   0% {
     width: 100%;
