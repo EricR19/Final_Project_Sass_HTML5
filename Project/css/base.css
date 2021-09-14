@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&family=Glory&family=Open+Sans+Condensed:wght@700&family=Poppins:wght@200;300&family=Sarabun:wght@100&display=swap");
 .container-title h2, .text-title h2, h3 {
   font-family: 'Open Sans Condensed', sans-serif;
+  color: rgba(39, 60, 117, 0.74);
 }
 
 .container-title .text-info {
@@ -19,7 +20,9 @@
 }
 
 .collapse-Nav {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .container-title h2 {
@@ -28,6 +31,10 @@
 
 img {
   height: 20px;
+}
+
+.mid-container {
+  background-color: rgba(58, 86, 125, 0.1);
 }
 
 .text-title h2 {
@@ -113,16 +120,43 @@ li a {
 }
 
 .animate-bottom {
-  animation: fadeInBottom 1s;
+  -webkit-animation: fadeInBottom 1s;
+          animation: fadeInBottom 1s;
+}
+
+.our-Service-Fade {
+  -webkit-animation: fadeInUp 2s;
+          animation: fadeInUp 2s;
+}
+
+@-webkit-keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes write {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
   }
 }
 
@@ -132,6 +166,15 @@ li a {
   }
   100% {
     width: 0%;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
