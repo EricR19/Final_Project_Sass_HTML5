@@ -10,12 +10,15 @@
 .container-title
     h2
         @extend %first-title
-        font-size: 4em
+        font-size: 3em
     .text-info
         @extend  %text-info
 
 img
     height: 20px
+
+.img-size
+    height: 500px
 
 .mid-container
     background-color: $lightGray
@@ -67,7 +70,7 @@ li
         font-size: 1em
 
 .h2-footer
-    font-size: 1.6em
+    font-size: 1.5em
     font-weight: bold
 
 .h3-footer
@@ -75,7 +78,7 @@ li
 
 .type
     overflow: hidden
-    animation: write 1.9s infinite alternate-reverse
+    animation: write 2.1s infinite alternate-reverse
 
 .animate-bottom
     animation: fadeInBottom 1s
@@ -108,3 +111,15 @@ li
         border-right: none
     .col-br-2
         border-right: none
+@media screen and (max-width: 415px)
+    .col-br-1
+        border-right: none
+    .col-br-3
+        border-right: none
+
+@media screen and (max-width: 600px)
+    .container-title
+        h2
+            font-size: 2em
+    .img-size
+        height: 300px

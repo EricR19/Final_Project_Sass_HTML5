@@ -20,17 +20,19 @@
 }
 
 .collapse-Nav {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .container-title h2 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 img {
   height: 20px;
+}
+
+.img-size {
+  height: 500px;
 }
 
 .mid-container {
@@ -106,7 +108,7 @@ li a {
 }
 
 .h2-footer {
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -116,47 +118,24 @@ li a {
 
 .type {
   overflow: hidden;
-  animation: write 1.9s infinite alternate-reverse;
+  animation: write 2.1s infinite alternate-reverse;
 }
 
 .animate-bottom {
-  -webkit-animation: fadeInBottom 1s;
-          animation: fadeInBottom 1s;
+  animation: fadeInBottom 1s;
 }
 
 .our-Service-Fade {
-  -webkit-animation: fadeInUp 2s;
-          animation: fadeInUp 2s;
-}
-
-@-webkit-keyframes fadeInBottom {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeInUp 2s;
 }
 
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    transform: translateY(100%);
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes write {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
   }
 }
 
@@ -166,15 +145,6 @@ li a {
   }
   100% {
     width: 0%;
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
@@ -194,6 +164,24 @@ li a {
   }
   .col-br-2 {
     border-right: none;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .col-br-1 {
+    border-right: none;
+  }
+  .col-br-3 {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-title h2 {
+    font-size: 2em;
+  }
+  .img-size {
+    height: 300px;
   }
 }
 /*# sourceMappingURL=base.css.map */
